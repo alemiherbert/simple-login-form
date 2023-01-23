@@ -1,0 +1,119 @@
+:root {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+}
+
+header {
+    background-color: #ffff8f;
+    border-bottom: 1px solid #555;
+}
+
+header nav {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 990px;
+    padding: 1.5rem 0;
+}
+
+#brand {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: 0;
+    padding: 0.5rem;
+    color: black;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: min(75%, 320px);
+    background-color: #ffff8f;
+    border: 1px solid #555;
+    box-shadow: 5px 5px #cbccc5;
+}
+
+.login-box h1 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.login-box form {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    height: 38px;
+    padding: 0 0.5rem;
+    border: 1px solid #666;
+}
+
+input[type=password] {
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+}
+
+input:required {
+    outline: none;
+    border-bottom-width: 2px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    background-color: #f8f8f8;
+}
+
+input:required:focus {
+    border-bottom: 2px solid tomato;
+}
+
+.login-box input[type=submit] {
+    margin-top: 3rem;
+    font-family: inherit;
+    background-color: #555;
+    color: white;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.login-box label {
+    margin: 0.5rem 0;
+}
+
+.login-box p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+footer {
+    text-align: center;
+}
